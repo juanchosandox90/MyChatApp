@@ -3,4 +3,14 @@
     <string name="welcome_to_my_chat_app">Welcome to My Chat App</string>
     <string name="already_have_account">Already have account</string>
     <string name="create_account">Need new account?</string>
+    <string name="login_title">Login</string>
+    <string name="create_account_title">Create New Account</string>
+    <string name="login_enter_email_hint">Enter Email</string>
+    <string name="create_account_email_hint">Enter Email</string>
+    <string name="create_account_name_hint">Display Name</string>
+    <string name="login_enter_password_hint">Enter Password</string>
+    <string name="create_account_password_hint">Enter Password</string>
+    <string name="create_account_password_confirm_hint">Confirm Password</string>
+    <string name="login_button">Login</string>
+    <string name="create_account_button">Create Account</string>
 </resources>

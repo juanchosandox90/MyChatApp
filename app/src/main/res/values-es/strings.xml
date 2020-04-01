@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ATC Chat App</string>
+    <string name="welcome_to_my_chat_app">Bienvenido a Android ATC App</string>
+    <string name="already_have_account">¿Ya tienes una cuenta?</string>
+    <string name="create_account">¿Necesitas una cuenta nueva?</string>
+    <string name="login_title">Ingresa</string>
+    <string name="create_account_title">Crea una cuenta</string>
+    <string name="login_enter_email_hint">Ingresal Email</string>
+    <string name="create_account_email_hint">Ingresa Email</string>
+    <string name="create_account_name_hint">Nombre para mostrar</string>
+    <string name="login_enter_password_hint">Ingresa contraseña</string>
+    <string name="create_account_password_hint">Ingresa contraseña</string>
+    <string name="create_account_password_confirm_hint">Confirma contraseña</string>
+    <string name="login_button">Ingresa</string>
+    <string name="create_account_button">Crea una cuenta</string>
+</resources>

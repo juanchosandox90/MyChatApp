@@ -13,4 +13,6 @@
     <string name="create_account_password_confirm_hint">Confirm Password</string>
     <string name="login_button">Login</string>
     <string name="create_account_button">Create Account</string>
+    <string name="log_out_menu">Log out</string>
+    <string name="settings_menu">Settings</string>
 </resources>

@@ -49,9 +49,6 @@ class MainActivity : AppCompatActivity() {
             if (user != null) {
                 startActivity(Intent(this, DashboardActivity::class.java))
                 finish()
-            } else {
-                Toast.makeText(this, "Not Signed In", Toast.LENGTH_LONG)
-                    .show()
             }
         }
     }

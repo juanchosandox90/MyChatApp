@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android ATC App</string>
+    <string name="app_name">ATC Chat App</string>
     <string name="welcome_to_my_chat_app">Welcome to Android ATC App</string>
     <string name="already_have_account">Already have account</string>
     <string name="create_account">Need new account?</string>

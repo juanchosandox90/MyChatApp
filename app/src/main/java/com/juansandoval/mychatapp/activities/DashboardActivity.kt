@@ -33,11 +33,6 @@ class DashboardActivity : AppCompatActivity() {
                     }
                 }
             }).attach()
-
-        if (intent.extras != null) {
-            var username = intent!!.extras!!.get("name")
-            //Toast.makeText(this, username.toString(), Toast.LENGTH_LONG).show()
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

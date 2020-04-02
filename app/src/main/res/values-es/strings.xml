@@ -15,4 +15,13 @@
     <string name="create_account_button">Crea una cuenta</string>
     <string name="log_out_menu">Salir</string>
     <string name="settings_menu">Configuraciones</string>
+    <string name="change_image_profile">Cambiar Imagen de Perfil</string>
+    <string name="change_status">Cambiar estado</string>
+    <string name="enter_your_status_title">Ingresa tu estado</string>
+    <string name="select_image_title">Selecciona Imagen</string>
+    <string name="update_status_btn">Actualiza Estado</string>
+    <string name="please_enter_all_fields">Por favor ingresa todos los campos!</string>
+    <string name="something_went_wrong">Algo salio mal! 😭</string>
+    <string name="user_not_created">El usuario no pudo ser creado 😭</string>
+    <string name="profile_image_Saved">Imagen de Perfil Guardada!</string>
 </resources>

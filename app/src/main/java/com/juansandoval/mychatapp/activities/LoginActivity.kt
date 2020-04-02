@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity() {
                     startActivity(dashboardIntent)
                     finish()
                 } else {
-                    Toast.makeText(this, "Something Went Wrong! \ud83d\ude2d", Toast.LENGTH_LONG)
+                    Toast.makeText(this, getString(R.string.something_went_wrong), Toast.LENGTH_LONG)
                         .show()
                 }
 
@@ -49,7 +49,7 @@ class LoginActivity : AppCompatActivity() {
         if (!TextUtils.isEmpty(email) || !TextUtils.isEmpty(password)) {
             loginUser(email, password)
         } else {
-            Toast.makeText(this, "Please Enter All Fields!", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, getString(R.string.please_enter_all_fields), Toast.LENGTH_LONG).show()
         }
     }
 }

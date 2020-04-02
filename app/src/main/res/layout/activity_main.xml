@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@color/darkBg"
     tools:context=".activities.MainActivity">
 
     <ImageView
@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mychat_icon" />
+        app:srcCompat="@drawable/new_chat_icon" />
 
     <TextView
         android:id="@+id/textView"
@@ -28,7 +28,7 @@
         android:text="@string/welcome_to_my_chat_app"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="@color/grey_800"
+        android:textColor="@color/grey_200"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,10 +42,11 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="50dp"
-        android:background="@drawable/bt_shape"
+        android:background="@drawable/bt_shape_3"
         android:stateListAnimator="@drawable/state_list_animator_z"
         android:text="@string/already_have_account"
         android:textAllCaps="false"
+        android:textSize="18sp"
         android:textColor="@color/grey_100"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView"
@@ -57,11 +58,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:background="@drawable/bt_shape"
+        android:background="@drawable/bt_shape_3"
         android:stateListAnimator="@drawable/state_list_animator_z"
         android:text="@string/create_account"
         android:textAllCaps="false"
         android:textColor="@color/grey_100"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/loginButton"
         app:layout_constraintStart_toStartOf="@+id/loginButton"

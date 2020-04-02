@@ -39,10 +39,10 @@ class CreateAccountActivity : AppCompatActivity() {
 
                     // Object User to put in the DB
                     var userObject = HashMap<String, String>()
-                    userObject.put("display_name", displayName)
-                    userObject.put("status", "Hello There")
-                    userObject.put("image", "default")
-                    userObject.put("thumb_image", "default")
+                    userObject["display_name"] = displayName
+                    userObject["status"] = "Hello There"
+                    userObject["image"] = "default"
+                    userObject["thumb_image"] = "default"
 
                     mDataBase!!.setValue(userObject).addOnCompleteListener { task: Task<Void> ->
                         if (task.isSuccessful) {
@@ -51,11 +51,20 @@ class CreateAccountActivity : AppCompatActivity() {
                             startActivity(dashboardIntent)
                             finish()
                         } else {
-                            Toast.makeText(this, "User Not Created \uD83D\uDE2D", Toast.LENGTH_LONG).show()
+                            Toast.makeText(
+                                this,
+                                getString(R.string.user_not_created),
+                                Toast.LENGTH_LONG
+                            )
+                                .show()
                         }
                     }
                 } else {
-                    Toast.makeText(this, "Something Went Wrong! \ud83d\ude2d", Toast.LENGTH_LONG)
+                    Toast.makeText(
+                        this,
+                        getString(R.string.something_went_wrong),
+                        Toast.LENGTH_LONG
+                    )
                         .show()
                 }
             }
@@ -71,7 +80,8 @@ class CreateAccountActivity : AppCompatActivity() {
         ) {
             createAccount(email, password, displayName)
         } else {
-            Toast.makeText(this, "Please Enter All Fields!", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, getString(R.string.please_enter_all_fields), Toast.LENGTH_LONG)
+                .show()
         }
     }
 }

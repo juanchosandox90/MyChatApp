@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.auth.FirebaseAuth
 import com.juansandoval.mychatapp.R
@@ -37,7 +36,7 @@ class DashboardActivity : AppCompatActivity() {
 
         if (intent.extras != null) {
             var username = intent!!.extras!!.get("name")
-            Toast.makeText(this, username.toString(), Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, username.toString(), Toast.LENGTH_LONG).show()
         }
     }
 

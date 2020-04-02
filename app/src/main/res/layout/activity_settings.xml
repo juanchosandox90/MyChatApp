@@ -4,6 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/darkBg"
     tools:context=".activities.SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settingsProfileId"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/profile_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settingsDisplayName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Display Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsProfileId" />
+
+    <TextView
+        android:id="@+id/settingsStatusText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto"
+        android:text="Hey! Im really happy"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/settingsDisplayName"
+        app:layout_constraintStart_toStartOf="@+id/settingsDisplayName"
+        app:layout_constraintTop_toBottomOf="@+id/settingsDisplayName" />
+
+    <Button
+        android:id="@+id/settingsImgBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bt_shape_3"
+        android:stateListAnimator="@drawable/state_list_animator_z"
+        android:text="@string/change_image_profile"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsStatusText" />
+
+    <Button
+        android:id="@+id/settingsChangeStatusBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bt_shape_3"
+        android:stateListAnimator="@drawable/state_list_animator_z"
+        android:text="@string/change_status"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/settingsImgBtn"
+        app:layout_constraintStart_toStartOf="@+id/settingsImgBtn"
+        app:layout_constraintTop_toBottomOf="@+id/settingsImgBtn" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

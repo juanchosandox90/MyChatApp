@@ -24,4 +24,13 @@
     <string name="something_went_wrong">Algo salio mal! 😭</string>
     <string name="user_not_created">El usuario no pudo ser creado 😭</string>
     <string name="profile_image_Saved">Imagen de Perfil Guardada!</string>
+    <string name="select_option_title">Selecciona la opción</string>
+    <string name="open_profile_dialog_btn">Abrir Perfil</string>
+    <string name="send_message_dialog_btn">Enviar Mensaje</string>
+    <string name="log_out_dialog_title">¿Estas seguro que quieres salir?</string>
+    <string name="cancel_log_out_dialog_btn">Cancelar</string>
+    <string name="login_title_activity">Ingresar</string>
+    <string name="create_account_title_activity">Crear Cuenta</string>
+    <string name="settings_title_activity">Configuraciones</string>
+    <string name="profile_title_activity">Perfil</string>
 </resources>

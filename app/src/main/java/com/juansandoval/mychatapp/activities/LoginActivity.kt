@@ -21,6 +21,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         mAuth = FirebaseAuth.getInstance()
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.title = getString(R.string.login_title_activity)
         loginButtonId.setOnClickListener {
             validateFields()
         }
@@ -36,7 +38,11 @@ class LoginActivity : AppCompatActivity() {
                     startActivity(dashboardIntent)
                     finish()
                 } else {
-                    Toast.makeText(this, getString(R.string.something_went_wrong), Toast.LENGTH_LONG)
+                    Toast.makeText(
+                        this,
+                        getString(R.string.something_went_wrong),
+                        Toast.LENGTH_LONG
+                    )
                         .show()
                 }
 
@@ -49,7 +55,14 @@ class LoginActivity : AppCompatActivity() {
         if (!TextUtils.isEmpty(email) || !TextUtils.isEmpty(password)) {
             loginUser(email, password)
         } else {
-            Toast.makeText(this, getString(R.string.please_enter_all_fields), Toast.LENGTH_LONG).show()
+            Toast.makeText(this, getString(R.string.please_enter_all_fields), Toast.LENGTH_LONG)
+                .show()
         }
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
 }

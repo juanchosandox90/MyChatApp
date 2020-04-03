@@ -22,6 +22,8 @@ class CreateAccountActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_account)
         mAuth = FirebaseAuth.getInstance()
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.title = getString(R.string.create_account_title_activity)
         createActButtonId.setOnClickListener {
             validateFields()
         }
@@ -83,5 +85,10 @@ class CreateAccountActivity : AppCompatActivity() {
             Toast.makeText(this, getString(R.string.please_enter_all_fields), Toast.LENGTH_LONG)
                 .show()
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

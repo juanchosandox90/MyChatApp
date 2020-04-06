@@ -33,4 +33,7 @@
     <string name="create_account_title_activity">Create Account</string>
     <string name="settings_title_activity">Settings</string>
     <string name="profile_title_activity">Profile</string>
+    <string name="other_wrote_hint"> Wrote …</string>
+    <string name="i_wrote_hint"> I wrote …</string>
+    <string name="message_text_empty">You have to type something to send a message</string>
 </resources>
